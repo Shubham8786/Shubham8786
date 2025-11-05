@@ -112,59 +112,154 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="py-12 bg-white">
+        {/* Features Section */}
+        <div className="py-20 bg-gradient-to-b from-gray-50 to-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="lg:text-center">
-              <h2 className="text-base text-blue-600 font-semibold tracking-wide uppercase">
-                Features
-              </h2>
-              <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-200 rounded-full text-sm font-medium text-purple-700 mb-6">
+                <svg className="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+                Powerful Features
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
                 Everything you need for perfect home design
+              </h2>
+              <p className="max-w-2xl mx-auto text-lg text-gray-600">
+                Professional-grade tools and intelligent algorithms to create your dream home layout
               </p>
             </div>
 
-            <div className="mt-10">
-              <div className="space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10">
-                <div className="relative">
-                  <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
-                    <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+              {/* Feature 1 */}
+              <div className="group relative bg-white rounded-2xl p-8 border border-gray-200 hover:border-blue-300 hover:shadow-xl transition-all duration-300">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative z-10">
+                  <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
                   </div>
-                  <p className="ml-16 text-lg leading-6 font-medium text-gray-900">
-                    Exact Room Dimensions
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Exact Room Dimensions</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Get precise measurements for every room with square footage calculations optimized for Indian standards and building regulations.
                   </p>
-                  <p className="mt-2 ml-16 text-base text-gray-500">
-                    Get precise measurements for every room with square footage calculations optimized for Indian standards.
-                  </p>
+                  <div className="mt-4 flex items-center text-blue-600 font-medium">
+                    <span className="text-sm">Precision down to the inch</span>
+                    <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
                 </div>
+              </div>
 
-                <div className="relative">
-                  <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
-                    <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              {/* Feature 2 */}
+              <div className="group relative bg-white rounded-2xl p-8 border border-gray-200 hover:border-purple-300 hover:shadow-xl transition-all duration-300">
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative z-10">
+                  <div className="w-14 h-14 bg-gradient-to-br from-purple-600 to-pink-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
                     </svg>
                   </div>
-                  <p className="ml-16 text-lg leading-6 font-medium text-gray-900">
-                    Smart Furniture Placement
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Smart Furniture Placement</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Automatic furniture arrangement with space optimization and modern Indian design preferences for maximum comfort and functionality.
                   </p>
-                  <p className="mt-2 ml-16 text-base text-gray-500">
-                    Automatic furniture arrangement with space optimization and modern Indian design preferences.
-                  </p>
+                  <div className="mt-4 flex items-center text-purple-600 font-medium">
+                    <span className="text-sm">AI-optimized layouts</span>
+                    <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
                 </div>
+              </div>
 
-                <div className="relative">
-                  <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
-                    <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              {/* Feature 3 */}
+              <div className="group relative bg-white rounded-2xl p-8 border border-gray-200 hover:border-orange-300 hover:shadow-xl transition-all duration-300">
+                <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative z-10">
+                  <div className="w-14 h-14 bg-gradient-to-br from-orange-600 to-amber-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
-                  <p className="ml-16 text-lg leading-6 font-medium text-gray-900">
-                    Vastu Compliance
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Vastu Compliance</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Built-in Vastu Shastra principles ensuring optimal room positioning and positive energy flow throughout your home.
                   </p>
-                  <p className="mt-2 ml-16 text-base text-gray-500">
-                    Built-in Vastu Shastra principles ensuring optimal room positioning and energy flow.
+                  <div className="mt-4 flex items-center text-orange-600 font-medium">
+                    <span className="text-sm">Traditional wisdom</span>
+                    <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              {/* Feature 4 */}
+              <div className="group relative bg-white rounded-2xl p-8 border border-gray-200 hover:border-green-300 hover:shadow-xl transition-all duration-300">
+                <div className="absolute inset-0 bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative z-10">
+                  <div className="w-14 h-14 bg-gradient-to-br from-green-600 to-emerald-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Instant Export</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Download professional floor plans in PDF, PNG, or share directly with contractors and family members in one click.
                   </p>
+                  <div className="mt-4 flex items-center text-green-600 font-medium">
+                    <span className="text-sm">Multiple formats</span>
+                    <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              {/* Feature 5 */}
+              <div className="group relative bg-white rounded-2xl p-8 border border-gray-200 hover:border-indigo-300 hover:shadow-xl transition-all duration-300">
+                <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 to-blue-50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative z-10">
+                  <div className="w-14 h-14 bg-gradient-to-br from-indigo-600 to-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                    </svg>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Mobile Optimized</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Design your dream home on any device with our fully responsive interface that works seamlessly on smartphones and tablets.
+                  </p>
+                  <div className="mt-4 flex items-center text-indigo-600 font-medium">
+                    <span className="text-sm">Design anywhere</span>
+                    <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              {/* Feature 6 */}
+              <div className="group relative bg-white rounded-2xl p-8 border border-gray-200 hover:border-teal-300 hover:shadow-xl transition-all duration-300">
+                <div className="absolute inset-0 bg-gradient-to-br from-teal-50 to-cyan-50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative z-10">
+                  <div className="w-14 h-14 bg-gradient-to-br from-teal-600 to-cyan-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Indian Standards</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Specifically optimized for Indian home layouts, room sizes, furniture dimensions, and architectural preferences.
+                  </p>
+                  <div className="mt-4 flex items-center text-teal-600 font-medium">
+                    <span className="text-sm">Locally optimized</span>
+                    <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
                 </div>
               </div>
             </div>
