@@ -46,31 +46,67 @@ export default function HomePage() {
         </div>
       </nav>
 
-      <main>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <main className="relative">
+        {/* Hero Section */}
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
           <div className="text-center">
-            <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-              <span className="block">Custom Floor Plans for</span>
-              <span className="block text-blue-600">Indian Homes</span>
+            <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-50 to-cyan-50 border border-blue-200 rounded-full text-sm font-medium text-blue-700 mb-6">
+              <svg className="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+              AI-Powered Design Generation
+            </div>
+
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight">
+              <span className="block text-gray-900 mb-2">Design Your Perfect</span>
+              <span className="block bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+                Indian Home
+              </span>
             </h1>
-            <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+
+            <p className="mt-6 max-w-3xl mx-auto text-lg sm:text-xl text-gray-600 leading-relaxed">
               Create professional housing designs with exact room dimensions,
-              optimal furniture placement, and Vastu compliance in seconds.
+              optimal furniture placement, and Vastu compliance—all in under 60 seconds.
             </p>
-            <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
-              <div className="rounded-md shadow">
-                <Link href="/design">
-                  <Button size="lg" className="w-full">
-                    Start Designing
-                  </Button>
-                </Link>
+
+            <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Link href="/design">
+                <Button size="lg" className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 px-8 py-4 text-lg">
+                  <svg className="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                  </svg>
+                  Start Designing Now
+                </Button>
+              </Link>
+
+              <div className="flex items-center space-x-4 text-gray-600">
+                <div className="flex items-center">
+                  <svg className="w-5 h-5 text-green-500 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-sm">Free to use</span>
+                </div>
+                <div className="flex items-center">
+                  <svg className="w-5 h-5 text-green-500 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span className="text-sm">60-second results</span>
+                </div>
               </div>
-              <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-                <Link href="/#examples">
-                  <Button variant="outline" size="lg" className="w-full">
-                    View Examples
-                  </Button>
-                </Link>
+            </div>
+
+            {/* Preview image placeholder */}
+            <div className="mt-16 relative">
+              <div className="bg-white rounded-2xl shadow-2xl border border-gray-200 p-8 max-w-4xl mx-auto">
+                <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl h-64 flex items-center justify-center">
+                  <div className="text-center">
+                    <svg className="w-16 h-16 text-blue-600 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    </svg>
+                    <p className="text-gray-600 font-medium">Professional Floor Plans</p>
+                    <p className="text-gray-500 text-sm mt-1">Vastu-compliant • Optimized layouts • Instant download</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
